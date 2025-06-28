@@ -1,109 +1,163 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Da'Rosa - Artista Angolano | Links oficiais, perfis musicais e presença online da MDS - Media Development Studio">
-  <title>Da'Rosa - Links Oficiais</title>
-  <link rel="icon" href="Galleryit_20250411_1744410634.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Da'Rosa - Artista & Empresário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: #fff;
-      text-align: center;
       margin: 0;
+      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      color: gold;
+      font-size: 2.5rem;
+    }
+    .bio, .links, .releases, .footer {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .bio p, .release-description p, .footer p {
+      color: #eee;
+      line-height: 1.6;
+    }
+    .links ul {
+      list-style: none;
       padding: 0;
     }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-    }
-    img.profile {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 3px solid #1DB954;
-      margin-top: 30px;
-    }
-    h1 {
-      font-size: 28px;
-      margin: 20px 0 10px;
-    }
-    p {
-      font-size: 14px;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-    .link-list a {
-      display: block;
-      background: #1DB954;
-      color: #fff;
+    .links li a {
+      color: gold;
       text-decoration: none;
-      margin: 10px 0;
-      padding: 12px;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: background 0.3s;
+      display: block;
+      margin: 0.5rem 0;
     }
-    .link-list a:hover {
-      background: #14833b;
+    .release {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .release img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .release-description {
+      margin-top: 1rem;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
-  <!-- Schema Markup -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MusicGroup",
+    "@type": "Person",
     "name": "Da'Rosa",
-    "url": "https://lewiscabingano.github.io/Da-Rosa",
-    "image": "https://lewiscabingano.github.io/Da-Rosa/Galleryit_20250411_1744410634.png",
+    "alternateName": "Domingos da Rosa Cabingano",
+    "jobTitle": "Cantor, compositor e empresário",
+    "url": "https://lewiscabingano.github.io/Da-Rosa/",
+    "image": "https://raw.githubusercontent.com/LewisCabingano/Da-Rosa/main/Galleryit_20250411_1744410634.png",
     "sameAs": [
+      "https://www.wikidata.org/wiki/Q134917322",
+      "https://musicbrainz.org/artist/44fb5997-aa01-48d3-a781-ed49fbf98b24",
+      "https://www.discogs.com/artist/16302424-DaRosa",
+      "https://www.instagram.com/da_rosa_oficial",
+      "https://x.com/Da_Rosa_oficial",
+      "https://www.tiktok.com/@da_rosa_oficial",
+      "https://www.facebook.com/lewisdarosa.cabingano",
+      "https://soundcloud.com/lewis-da-rosa-cabingano-544828581",
       "https://audius.co/da_rosa_oficial",
       "https://darosa-oficial.bandcamp.com/",
       "https://suamusica.com.br/lewisdarosacabingano",
-      "https://soundcloud.com/lewis-da-rosa-cabingano-544828581",
       "https://www.last.fm/user/DaRosa_Oficial",
       "https://genius.com/Darosa-nbs-essa-mulher-me-comanda-lyrics",
-      "https://musicbrainz.org/artist/44fb5997-aa01-48d3-a781-ed49fbf98b24",
-      "https://www.discogs.com/pt_BR/artist/16302424-DaRosa",
-      "https://darosaoficial.blogspot.com/",
-      "https://mdsproduzsom.blogspot.com/",
-      "https://lewiscabingano.github.io/Da-Rosa",
-      "https://www.instagram.com/da_rosa_oficial",
-      "https://www.facebook.com/lewisdarosa.cabingano",
-      "https://x.com/Da_Rosa_oficial",
-      "https://www.tiktok.com/@da_rosa_oficial",
-      "https://www.wikidata.org/wiki/Q134917322",
-      "https://www.youtube.com/@DaRosa_Mds"
-    ]
+      "https://www.youtube.com/@DaRosa_Mds",
+      "https://darosaoficial.blogspot.com"
+    ],
+    "birthPlace": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Luanda",
+        "addressCountry": "AO"
+      }
+    },
+    "nationality": {
+      "@type": "Country",
+      "name": "Angola"
+    },
+    "affiliation": {
+      "@type": "Organization",
+      "name": "MDS - Media Development Studio",
+      "url": "https://mds-label.github.io/mds-ao/"
+    }
   }
   </script>
 </head>
+
 <body>
-  <div class="container">
-    <img src="Galleryit_20250411_1744410634.png" alt="Foto de perfil Da'Rosa" class="profile">
+  <header>
     <h1>Da'Rosa</h1>
-    <p>Artista Angolano | Fundador da MDS - Media Development Studio</p>
-    <div class="link-list">
-      <a href="https://audius.co/da_rosa_oficial" target="_blank">Audius</a>
-      <a href="https://darosa-oficial.bandcamp.com/" target="_blank">Bandcamp</a>
-      <a href="https://suamusica.com.br/lewisdarosacabingano" target="_blank">Sua Música</a>
-      <a href="https://soundcloud.com/lewis-da-rosa-cabingano-544828581" target="_blank">SoundCloud</a>
-      <a href="https://www.last.fm/user/DaRosa_Oficial" target="_blank">Last.fm</a>
-      <a href="https://genius.com/Darosa-nbs-essa-mulher-me-comanda-lyrics" target="_blank">Genius (Letra)</a>
-      <a href="https://musicbrainz.org/artist/44fb5997-aa01-48d3-a781-ed49fbf98b24" target="_blank">MusicBrainz</a>
-      <a href="https://www.discogs.com/pt_BR/artist/16302424-DaRosa" target="_blank">Discogs</a>
-      <a href="https://darosaoficial.blogspot.com/" target="_blank">Blog Da'Rosa</a>
-      <a href="https://mdsproduzsom.blogspot.com/" target="_blank">Blog MDS Produz Som</a>
-      <a href="https://lewiscabingano.github.io/Da-Rosa" target="_blank">GitHub Pages</a>
-      <a href="https://www.instagram.com/da_rosa_oficial" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/lewisdarosa.cabingano" target="_blank">Facebook</a>
-      <a href="https://x.com/Da_Rosa_oficial" target="_blank">Twitter / X</a>
-      <a href="https://www.tiktok.com/@da_rosa_oficial" target="_blank">TikTok</a>
-      <a href="https://www.youtube.com/@DaRosa_Mds" target="_blank">YouTube</a>
-      <a href="https://www.wikidata.org/wiki/Q134917322" target="_blank">Wikidata</a>
+    <p>Cantor, compositor & empresário</p>
+  </header>
+
+  <section class="bio">
+    <p>Da'Rosa, nome artístico de Domingos da Rosa Cabingano, é um cantor e empresário angolano com atuação nos estilos R&B, Zouk, Pop e Afro. Fundador da MDS - Media Development Studio, Da'Rosa representa uma nova geração de artistas comprometidos com qualidade, identidade cultural e inovação musical.</p>
+    <p><em>Da'Rosa is an Angolan singer and entrepreneur blending R&B, Zouk, Pop, and Afro rhythms. Founder of MDS - Media Development Studio, he leads a new generation of artists focused on quality, cultural identity, and musical innovation.</em></p>
+  </section>
+
+  <section class="links">
+    <h2 style="color: gold">Links Oficiais</h2>
+    <ul>
+      <li><a href="https://www.instagram.com/da_rosa_oficial" target="_blank">Instagram</a></li>
+      <li><a href="https://www.tiktok.com/@da_rosa_oficial" target="_blank">TikTok</a></li>
+      <li><a href="https://x.com/Da_Rosa_oficial" target="_blank">X (Twitter)</a></li>
+      <li><a href="https://www.facebook.com/lewisdarosa.cabingano" target="_blank">Facebook</a></li>
+      <li><a href="https://soundcloud.com/lewis-da-rosa-cabingano-544828581" target="_blank">SoundCloud</a></li>
+      <li><a href="https://audius.co/da_rosa_oficial" target="_blank">Audius</a></li>
+      <li><a href="https://darosa-oficial.bandcamp.com/" target="_blank">Bandcamp</a></li>
+      <li><a href="https://suamusica.com.br/lewisdarosacabingano" target="_blank">Sua Música</a></li>
+      <li><a href="https://genius.com/Darosa-nbs-essa-mulher-me-comanda-lyrics" target="_blank">Genius</a></li>
+      <li><a href="https://www.youtube.com/@DaRosa_Mds" target="_blank">YouTube</a></li>
+      <li><a href="https://darosaoficial.blogspot.com" target="_blank">Blogspot</a></li>
+      <li><a href="https://musicbrainz.org/artist/44fb5997-aa01-48d3-a781-ed49fbf98b24" target="_blank">MusicBrainz</a></li>
+      <li><a href="https://www.discogs.com/artist/16302424-DaRosa" target="_blank">Discogs</a></li>
+      <li><a href="https://www.wikidata.org/wiki/Q134917322" target="_blank">Wikidata</a></li>
+    </ul>
+  </section>
+
+  <section class="releases">
+    <h2 style="color: gold">Lançamentos</h2>
+    <div class="release">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3aYWhRrlYgEHejsPgO4iiQ0uJxj3Nja2hFFIpz0v7MJq5ktNKwKoI44c_vegIHA57Bd4mJmOZnMXElYxbO2iuHA1cDBFCIDLqFQ_IgjQhFkV94XMtjGgXDMvmZ3haJrCtsnq3seZC8fd2z9TSPdJhZpM8BYn8mGysoUqeVmRKfco1l49K78KR_4mtQ1s/s3000/Design%20sem%20nome_20250610_010612_0000.jpg" alt="Capa Banzelo Seguro">
+      <div class="release-description">
+        <p><strong>Lyo Tavares & Da'Rosa</strong></p>
+        <p>Música: Banzelo Seguro</p>
+        <p>Gênero: Zouk R&B</p>
+        <p>Ano de Lançamento: 2023</p>
+        <p><a href="https://m.soundcloud.com/lewis-da-rosa-cabingano-544828581/banzelo-seguro-lyo-tavares" target="_blank" style="color: gold">Ouvir no SoundCloud</a></p>
+        <p><a href="https://youtu.be/fF-h1udXbWA?si=CrxigQdi7vsXoN1k" target="_blank" style="color: gold">Ver no YouTube</a></p>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Da'Rosa | Desenvolvido com ❤️ pela MDS</p>
+  </footer>
 </body>
+
 </html>
