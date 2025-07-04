@@ -1,46 +1,94 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Da'Rosa - Músicas Oficiais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Da'Rosa - Cantor e Compositor</title>
+  <meta name="description" content="Da'Rosa é um cantor e compositor angolano, conhecido por suas letras profundas e músicas autênticas.">
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; margin: 0; padding: 20px; }
-    .container { max-width: 800px; margin: auto; }
-    h1 { color: #000; text-align: center; }
-    .artist-photo { width: 200px; border-radius: 50%; display: block; margin: 20px auto; }
-    .bio { text-align: center; margin-bottom: 40px; }
-    .music-block { margin-bottom: 40px; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    .music-block h2 { margin-top: 0; }
-    .btn { display: inline-block; padding: 10px 20px; background: #000; color: #fff; text-decoration: none; border-radius: 5px; }
-    .home-link { text-align: center; margin-top: 40px; }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #FFD700;
+    }
+
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .video, .audio {
+      margin: 20px 0;
+    }
+
+    .btn-voltar {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn-voltar:hover {
+      background-color: #e5c100;
+    }
   </style>
+
+  <!-- JSON-LD Schema.org para o artista Da'Rosa -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Da'Rosa",
+    "alternateName": "Darosa",
+    "url": "https://lewiscabingano.github.io/Da-Rosa/darosa.html",
+    "image": "https://lh3.googleusercontent.com/p/AF1QipPGQF_GwSpO1eh89TmdcWwTErT-pKninnAEoG_M=s1592-w846-h1592-rw",
+    "genre": "Afrobeat, Soul",
+    "member": [],
+    "description": "Da'Rosa é um cantor e compositor angolano com músicas marcantes e mensagens profundas.",
+    "sameAs": [
+      "https://www.youtube.com/@mds-mediadevelopmentstudio",
+      "https://darosa-oficial.bandcamp.com",
+      "https://soundcloud.com/mds-produz-som"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>Da'Rosa</h1>
-    <img class="artist-photo" src="https://lh3.googleusercontent.com/p/AF1QipPGQF_GwSpO1eh89TmdcWwTErT-pKninnAEoG_M=s1592-w846-h1592-rw" alt="Da'Rosa" /><div class="bio">
-  <p>Da’Rosa é cantor e compositor angolano, com letras que misturam emoção, identidade e realidade vivida. Suas músicas refletem experiências profundas e apaixonadas.</p>
-</div>
 
-<div class="music-block" itemscope itemtype="https://schema.org/MusicRecording">
-  <h2 itemprop="name">Essa Mulher Me Comanda</h2>
-  <meta itemprop="inAlbum" content="Single" />
-  <meta itemprop="byArtist" content="Da'Rosa" />
-  <a class="btn" href="https://darosa-oficial.bandcamp.com/track/essa-mulher-me-comanda" target="_blank" itemprop="url">Ouvir no Bandcamp</a>
-</div>
+  <h1>Da'Rosa</h1>
+  <p>Da'Rosa é um cantor e compositor angolano com um estilo único e letras que transmitem sentimento e profundidade. Com um talento nato para melodias envolventes, ele tem conquistado o público com suas obras autênticas.</p>
 
-<div class="music-block" itemscope itemtype="https://schema.org/MusicRecording">
-  <h2 itemprop="name">Banzelo Seguro</h2>
-  <meta itemprop="inAlbum" content="Single" />
-  <meta itemprop="byArtist" content="Da'Rosa" />
-  <p><a class="btn" href="https://soundcloud.com/mdsproduzsom/banzelo-seguro" target="_blank" itemprop="url">Ouvir no SoundCloud</a></p>
-  <p><a class="btn" href="https://www.youtube.com/watch?v=XxxxxxXxxxx" target="_blank">Assistir Videoclipe</a></p>
-</div>
+  <h2>🎧 Músicas disponíveis:</h2>
 
-<div class="home-link">
-  <a class="btn" href="index.html">Voltar à Página Inicial</a>
-</div>
-
+  <div class="audio">
+    <h3>Essa mulher me comanda</h3>
+    <p><a href="https://darosa-oficial.bandcamp.com/track/essa-mulher-me-comanda" target="_blank">Ouvir no Bandcamp</a></p>
   </div>
+
+  <div class="audio">
+    <h3>Banzelo Seguro</h3>
+    <p><a href="https://on.soundcloud.com/JgxREq5pDpr5E9W5p4" target="_blank">Ouvir no SoundCloud</a></p>
+  </div>
+
+  <div class="video">
+    <h3>🎥 Vídeo Oficial: Banzelo Seguro</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" title="Banzelo Seguro" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <a class="btn-voltar" href="index.html">← Voltar à página inicial</a>
+
 </body>
 </html>
