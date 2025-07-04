@@ -1,94 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Da'Rosa - Cantor e Compositor</title>
-  <meta name="description" content="Da'Rosa é um cantor e compositor angolano, conhecido por suas letras profundas e músicas autênticas.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Da'Rosa – Official Page</title>
   <style>
     body {
       background-color: #000;
       color: #fff;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       padding: 20px;
+      line-height: 1.6;
     }
-
-    h1, h2, h3 {
-      color: #FFD700;
+    h1, h2 {
+      color: #d4af37;
     }
-
     a {
-      color: #FFD700;
+      color: #d4af37;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
-    .video, .audio {
-      margin: 20px 0;
+    .section {
+      margin-bottom: 40px;
     }
-
-    .btn-voltar {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #FFD700;
+    .button-home {
+      background-color: #d4af37;
       color: #000;
+      padding: 8px 16px;
       text-decoration: none;
       border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .btn-voltar:hover {
-      background-color: #e5c100;
     }
   </style>
 
-  <!-- JSON-LD Schema.org para o artista Da'Rosa -->
+  <!-- Schema.org Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MusicGroup",
+    "@type": "Person",
     "name": "Da'Rosa",
-    "alternateName": "Darosa",
-    "url": "https://lewiscabingano.github.io/Da-Rosa/darosa.html",
+    "alternateName": "Lewis da Rosa Cabingano",
+    "description": "Cantor, compositor e produtor musical da MDS – Media Development Studio.",
     "image": "https://lh3.googleusercontent.com/p/AF1QipPGQF_GwSpO1eh89TmdcWwTErT-pKninnAEoG_M=s1592-w846-h1592-rw",
-    "genre": "Afrobeat, Soul",
-    "member": [],
-    "description": "Da'Rosa é um cantor e compositor angolano com músicas marcantes e mensagens profundas.",
+    "url": "https://lewiscabingano.github.io/Da-Rosa/darosa.html",
     "sameAs": [
-      "https://www.youtube.com/@mds-mediadevelopmentstudio",
-      "https://darosa-oficial.bandcamp.com",
-      "https://soundcloud.com/mds-produz-som"
+      "https://www.youtube.com/@darosaoficial",
+      "https://soundcloud.com/darosaoficial",
+      "https://darosa-oficial.bandcamp.com"
     ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicRecording",
+    "name": "Essa Mulher Me Comanda",
+    "byArtist": {
+      "@type": "Person",
+      "name": "Da'Rosa"
+    },
+    "url": "https://darosa-oficial.bandcamp.com/track/essa-mulher-me-comanda"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicRecording",
+    "name": "Banzelo Seguro",
+    "byArtist": {
+      "@type": "Person",
+      "name": "Da'Rosa"
+    },
+    "url": "https://on.soundcloud.com/JgxREq5pDpr5E9W5p4"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Banzelo Seguro – Videoclipe",
+    "description": "Videoclipe oficial da música Banzelo Seguro por Da'Rosa.",
+    "thumbnailUrl": "https://img.youtube.com/vi/kkslTFkThHE/maxresdefault.jpg",
+    "uploadDate": "2024-XX-XX",
+    "contentUrl": "https://youtu.be/kkslTFkThHE",
+    "embedUrl": "https://www.youtube.com/embed/kkslTFkThHE",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Da'Rosa Official",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://lh3.googleusercontent.com/p/AF1QipPGQF_GwSpO1eh89TmdcWwTErT-pKninnAEoG_M=s1592-w846-h1592-rw"
+      }
+    }
   }
   </script>
 </head>
 <body>
 
-  <h1>Da'Rosa</h1>
-  <p>Da'Rosa é um cantor e compositor angolano com um estilo único e letras que transmitem sentimento e profundidade. Com um talento nato para melodias envolventes, ele tem conquistado o público com suas obras autênticas.</p>
+  <a class="button-home" href="index.html">Voltar para a página inicial</a>
 
-  <h2>🎧 Músicas disponíveis:</h2>
-
-  <div class="audio">
-    <h3>Essa mulher me comanda</h3>
-    <p><a href="https://darosa-oficial.bandcamp.com/track/essa-mulher-me-comanda" target="_blank">Ouvir no Bandcamp</a></p>
+  <div class="section">
+    <h1>Da'Rosa</h1>
+    <p>Cantor, compositor e produtor musical angolano. Fundador da MDS – Media Development Studio, Da'Rosa é conhecido por sua autenticidade, voz marcante e letras que refletem a vida urbana e sentimentos profundos.</p>
   </div>
 
-  <div class="audio">
-    <h3>Banzelo Seguro</h3>
-    <p><a href="https://on.soundcloud.com/JgxREq5pDpr5E9W5p4" target="_blank">Ouvir no SoundCloud</a></p>
+  <div class="section">
+    <h2>Músicas em destaque</h2>
+    <ul>
+      <li><a href="https://darosa-oficial.bandcamp.com/track/essa-mulher-me-comanda" target="_blank">Essa Mulher Me Comanda (Bandcamp)</a></li>
+      <li><a href="https://on.soundcloud.com/JgxREq5pDpr5E9W5p4" target="_blank">Banzelo Seguro (SoundCloud)</a></li>
+    </ul>
   </div>
 
-  <div class="video">
-    <h3>🎥 Vídeo Oficial: Banzelo Seguro</h3>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" title="Banzelo Seguro" frameborder="0" allowfullscreen></iframe>
+  <div class="section">
+    <h2>Videoclipes</h2>
+    <p><a href="https://youtu.be/kkslTFkThHE" target="_blank">Banzelo Seguro – YouTube</a></p>
   </div>
 
-  <a class="btn-voltar" href="index.html">← Voltar à página inicial</a>
+  <div class="section">
+    <h2>Redes sociais</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@darosaoficial" target="_blank">YouTube</a></li>
+      <li><a href="https://soundcloud.com/darosaoficial" target="_blank">SoundCloud</a></li>
+      <li><a href="https://darosa-oficial.bandcamp.com" target="_blank">Bandcamp</a></li>
+    </ul>
+  </div>
 
 </body>
 </html>
