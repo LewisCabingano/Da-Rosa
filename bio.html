@@ -1,19 +1,96 @@
-<div id="pt" class="content active">
-  <h2 style="color: gold; text-align: center; margin-bottom: 20px;">🇦🇴 Biografia de Da’Rosa</h2>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biografia | Da'Rosa</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: gold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .tabs button {
+      background: none;
+      border: 2px solid gold;
+      color: gold;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .tabs button.active, .tabs button:hover {
+      background-color: gold;
+      color: black;
+    }
+    .content {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    .content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
 
-  <p style="color: white;">
-    Domingos da Rosa Cabingano, conhecido artisticamente como <strong>Da’Rosa</strong>, nasceu em 1 de janeiro de 1992 (1990 oficialmente), em Luanda, no município do Cazenga, bairro Hoji-Ya-Henda. Filho de <strong>Gaspar António Cabingano</strong>, natural da província de Malange, e de <strong>Arlete da Rosa</strong>, cabo-verdiana da Ilha de Brava, Da’Rosa carrega nas veias o cruzamento profundo entre culturas africanas e atlânticas — um reflexo direto da sua música.
-  </p>
+  <h1>Biografia de Da’Rosa</h1>
 
-  <p style="color: white;">
-    Desde jovem, foi atraído pelo universo artístico e espiritual. Começou a compor e cantar em 2011, integrando movimentos musicais urbanos e grupos como o NBS. Seu estilo atravessa ritmos como o <em>Zouk</em>, <em>R&B</em> e <em>Afro Pop</em>, com letras intensas, sensíveis e alinhadas ao cotidiano angolano. Em paralelo, mergulhou num caminho de autoconhecimento e conexão espiritual, que hoje se reflete na sua arte e nas suas escolhas.
-  </p>
+  <div class="tabs">
+    <button onclick="showTab('pt')" class="active">🇦🇴 Português</button>
+    <button onclick="showTab('en')">🇬🇧 English</button>
+    <button onclick="showTab('fr')">🇫🇷 Français</button>
+  </div>
 
-  <p style="color: white;">
-    Fundador da <strong>MDS – Media Development Studio</strong>, Da’Rosa tem atuado não só como artista, mas também como mentor e produtor, impulsionando novos talentos em Angola. Com colaborações marcantes como <em>Banzelo Seguro</em> com <strong>Lyo Tavares</strong> e obras autorais como <em>Essa Mulher me Comanda</em>, ele tem consolidado o seu nome como voz ativa da música independente angolana.
-  </p>
+  <div id="pt" class="content active">
+    <h2 style="color: gold; text-align: center;">🇦🇴 Biografia de Da’Rosa</h2>
 
-  <p style="color: white;">
-    Mais do que cantar, Da’Rosa tem como missão <strong>transformar consciências, valorizar raízes africanas e elevar a expressão artística da juventude angolana</strong>. Seu percurso é uma ponte entre espiritualidade, identidade e som.
-  </p>
-</div>
+    <p>Domingos da Rosa Cabingano, conhecido artisticamente como <strong>Da’Rosa</strong>, nasceu em 1 de janeiro de 1992 (1990 oficialmente), em Luanda, no município do Cazenga, bairro Hoji-Ya-Henda. Filho de <strong>Gaspar António Cabingano</strong>, natural da província de Malange, e de <strong>Arlete da Rosa</strong>, cabo-verdiana da Ilha de Brava, Da’Rosa carrega nas veias o cruzamento profundo entre culturas africanas e atlânticas — um reflexo direto da sua música.</p>
+
+    <p>Desde jovem, foi atraído pelo universo artístico e espiritual. Começou a compor e cantar em 2011, integrando movimentos musicais urbanos e grupos como o NBS. Seu estilo atravessa ritmos como o <em>Zouk</em>, <em>R&B</em> e <em>Afro Pop</em>, com letras intensas, sensíveis e alinhadas ao cotidiano angolano. Em paralelo, mergulhou num caminho de autoconhecimento e conexão espiritual, que hoje se reflete na sua arte e nas suas escolhas.</p>
+
+    <p>Fundador da <strong>MDS – Media Development Studio</strong>, Da’Rosa tem atuado não só como artista, mas também como mentor e produtor, impulsionando novos talentos em Angola. Com colaborações marcantes como <em>Banzelo Seguro</em> com <strong>Lyo Tavares</strong> e obras autorais como <em>Essa Mulher me Comanda</em>, ele tem consolidado o seu nome como voz ativa da música independente angolana.</p>
+
+    <p>Mais do que cantar, Da’Rosa tem como missão <strong>transformar consciências, valorizar raízes africanas e elevar a expressão artística da juventude angolana</strong>. Seu percurso é uma ponte entre espiritualidade, identidade e som.</p>
+  </div>
+
+  <div id="en" class="content">
+    <h2 style="color: gold; text-align: center;">🇬🇧 Biography of Da’Rosa</h2>
+    <p style="color: grey;">(Em breve...)</p>
+  </div>
+
+  <div id="fr" class="content">
+    <h2 style="color: gold; text-align: center;">🇫🇷 Biographie de Da’Rosa</h2>
+    <p style="color: grey;">(Bientôt...)</p>
+  </div>
+
+  <script>
+    function showTab(lang) {
+      const tabs = document.querySelectorAll('.tabs button');
+      const contents = document.querySelectorAll('.content');
+      tabs.forEach(btn => btn.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
